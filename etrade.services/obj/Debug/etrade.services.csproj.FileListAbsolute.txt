@@ -1,0 +1,15 @@
+F:\SourceControl\Atlassian Git\Angular\project.tred-lisence2\etrade-server\etrade.services\bin\Debug\etrade.services.dll
+F:\SourceControl\Atlassian Git\Angular\project.tred-lisence2\etrade-server\etrade.services\bin\Debug\etrade.services.pdb
+F:\SourceControl\Atlassian Git\Angular\project.tred-lisence2\etrade-server\etrade.services\bin\Debug\etrade.dll
+F:\SourceControl\Atlassian Git\Angular\project.tred-lisence2\etrade-server\etrade.services\bin\Debug\System.Web.Http.dll
+F:\SourceControl\Atlassian Git\Angular\project.tred-lisence2\etrade-server\etrade.services\bin\Debug\System.Net.Http.Formatting.dll
+F:\SourceControl\Atlassian Git\Angular\project.tred-lisence2\etrade-server\etrade.services\bin\Debug\Newtonsoft.Json.dll
+F:\SourceControl\Atlassian Git\Angular\project.tred-lisence2\etrade-server\etrade.services\bin\Debug\etrade.pdb
+F:\SourceControl\Atlassian Git\Angular\project.tred-lisence2\etrade-server\etrade.services\bin\Debug\System.Web.Http.xml
+F:\SourceControl\Atlassian Git\Angular\project.tred-lisence2\etrade-server\etrade.services\bin\Debug\System.Net.Http.Formatting.xml
+F:\SourceControl\Atlassian Git\Angular\project.tred-lisence2\etrade-server\etrade.services\bin\Debug\Newtonsoft.Json.xml
+F:\SourceControl\Atlassian Git\Angular\project.tred-lisence2\etrade-server\etrade.services\obj\Debug\etrade.services.csprojAssemblyReference.cache
+F:\SourceControl\Atlassian Git\Angular\project.tred-lisence2\etrade-server\etrade.services\obj\Debug\etrade.services.csproj.CoreCompileInputs.cache
+F:\SourceControl\Atlassian Git\Angular\project.tred-lisence2\etrade-server\etrade.services\obj\Debug\etrade.services.csproj.CopyComplete
+F:\SourceControl\Atlassian Git\Angular\project.tred-lisence2\etrade-server\etrade.services\obj\Debug\etrade.services.dll
+F:\SourceControl\Atlassian Git\Angular\project.tred-lisence2\etrade-server\etrade.services\obj\Debug\etrade.services.pdb
