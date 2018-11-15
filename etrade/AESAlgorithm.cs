@@ -7,7 +7,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Web;
 
-namespace Valuation_Board.Utils.EncryptionDecrytion
+namespace etrade
 {
     public class AESAlgorithm:IEncryptDecrypt
     {

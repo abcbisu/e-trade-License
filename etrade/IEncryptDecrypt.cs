@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Valuation_Board.Utils.EncryptionDecrytion
+namespace etrade
 {
    public interface IEncryptDecrypt
     {
