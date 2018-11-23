@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27703.2018
+VisualStudioVersion = 15.0.26730.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "etrade-server", "etrade-server\etrade-server.csproj", "{46FA7265-6EB9-457D-B538-440E3FB79493}"
 EndProject
@@ -9,7 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "etrade", "etrade\etrade.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "etrade.services", "etrade.services\etrade.services.csproj", "{1F799301-EEBF-4A06-A633-ECD39BBA4ED3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "etrade.Dal", "etrade.Dal\etrade.Dal.csproj", "{4F030094-98CA-422B-A0C6-542CEAFCBEB1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "etrade.dal", "etrade.Dal\etrade.dal.csproj", "{4F030094-98CA-422B-A0C6-542CEAFCBEB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "etrade.entities", "etrade.entities\etrade.entities.csproj", "{7CE40B7E-9870-4CB9-99E8-60FAE5EE075F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "etrade.models", "etrade.models\etrade.models.csproj", "{4EE5A1D7-B1F9-40E9-B39A-F03640B5D933}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "etrade.console-test", "etrade.console-test\etrade.console-test.csproj", "{EE4687B6-54BC-4C0E-B12C-9F19E63E9DC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{4F030094-98CA-422B-A0C6-542CEAFCBEB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F030094-98CA-422B-A0C6-542CEAFCBEB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F030094-98CA-422B-A0C6-542CEAFCBEB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CE40B7E-9870-4CB9-99E8-60FAE5EE075F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CE40B7E-9870-4CB9-99E8-60FAE5EE075F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CE40B7E-9870-4CB9-99E8-60FAE5EE075F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CE40B7E-9870-4CB9-99E8-60FAE5EE075F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EE5A1D7-B1F9-40E9-B39A-F03640B5D933}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EE5A1D7-B1F9-40E9-B39A-F03640B5D933}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EE5A1D7-B1F9-40E9-B39A-F03640B5D933}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EE5A1D7-B1F9-40E9-B39A-F03640B5D933}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE4687B6-54BC-4C0E-B12C-9F19E63E9DC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE4687B6-54BC-4C0E-B12C-9F19E63E9DC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE4687B6-54BC-4C0E-B12C-9F19E63E9DC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE4687B6-54BC-4C0E-B12C-9F19E63E9DC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

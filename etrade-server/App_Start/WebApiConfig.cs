@@ -13,18 +13,18 @@ namespace etrade_server.App_Start
     {
         public static void Register(HttpConfiguration config)
         {
-            config.MapHttpAttributeRoutes(new CentralizedPrefixProvider("api"));
-
+            //config.MapHttpAttributeRoutes(new CentralizedPrefixProvider("api"));
+            config.MapHttpAttributeRoutes();
             config.Services.Replace(typeof(IExceptionHandler), new ApiExceptionManagerApi());
 
             #region handle 404
-            var r = config.Routes.MapHttpRoute(
-                name: "Error404",
-                routeTemplate: "{*url}",
-                defaults: new { controller = "Error", action = "Handle404" }
-            );
-            config.Services.Replace(typeof(IHttpControllerSelector), new HttpNotFoundAwareDefaultHttpControllerSelector(config));
-            config.Services.Replace(typeof(IHttpActionSelector), new HttpNotFoundAwareControllerActionSelector());
+            //var r = config.Routes.MapHttpRoute(
+            //    name: "Error404",
+            //    routeTemplate: "{*url}",
+            //    defaults: new { controller = "Error", action = "Handle404" }
+            //);
+            //config.Services.Replace(typeof(IHttpControllerSelector), new HttpNotFoundAwareDefaultHttpControllerSelector(config));
+            //config.Services.Replace(typeof(IHttpActionSelector), new HttpNotFoundAwareControllerActionSelector());
             #endregion
         }
     }

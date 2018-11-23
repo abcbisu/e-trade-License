@@ -1,6 +1,6 @@
 ﻿using etrade;
 using etrade.services;
-using etrade.services.Models;
+using etrade.models;
 using System.Collections.Generic;
 using System.Configuration;
 
