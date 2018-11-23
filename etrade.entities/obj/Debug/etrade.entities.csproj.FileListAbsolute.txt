@@ -1,0 +1,5 @@
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.entities\bin\Debug\etrade.entities.dll
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.entities\bin\Debug\etrade.entities.pdb
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.entities\obj\Debug\etrade.entities.csproj.CoreCompileInputs.cache
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.entities\obj\Debug\etrade.entities.dll
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.entities\obj\Debug\etrade.entities.pdb
