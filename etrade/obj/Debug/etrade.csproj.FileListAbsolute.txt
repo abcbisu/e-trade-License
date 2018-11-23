@@ -19,6 +19,7 @@ C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade\bin\Debug\System.Web.Http.d
 C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade\bin\Debug\System.Net.Http.Formatting.xml
 C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade\bin\Debug\System.Web.Http.xml
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade\obj\Debug\etrade.csprojResolveAssemblyReference.cache
 C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade\obj\Debug\etrade.csproj.CoreCompileInputs.cache
 C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade\obj\Debug\etrade.dll
 C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade\obj\Debug\etrade.pdb
