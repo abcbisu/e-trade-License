@@ -7,6 +7,7 @@ using System.Security;
 using System.Web;
 using System.Web.Http.Controllers;
 using System.Web.Http.Filters;
+using etrade.models;
 
 namespace etrade_server.App_Start
 {
@@ -17,8 +18,9 @@ namespace etrade_server.App_Start
         {
 
             //  Get API key provider
-            var provider = new TokenServices();
-            var resourceService = new ResourceService();
+            var userMin = new UserMin() { UserId = 1, LoginType = LoginType.Anonymous };
+            var provider = new TokenServices(userMin.UserId);
+            var resourceService = new ResourceService(userMin.UserId);
             var tokenValue = "";
             var controllerName = filterContext.ActionDescriptor.ControllerDescriptor.ControllerName;
             var actionName = filterContext.ActionDescriptor.ActionName;
@@ -34,21 +36,13 @@ namespace etrade_server.App_Start
                     //skip toke property not supplied
                 }
                 // Validate Token
-                var arr = tokenValue.Split(':');
                 try
                 {
-                    var userMin = new UserMin() { UserId = 2, UserType = UserType.Anonymous };
+                    
                     if (!string.IsNullOrEmpty(tokenValue))
                     {
-                        //authorized user
-                        string tokenString = arr[1];
-                        long userId = Convert.ToInt64(arr[0]);
-                        var user = provider.ValidateToken(arr[1], userId);
-                        if (user == null)
-                        {
-                            throw new SecurityException("Token validation failed");
-                        }
-                        userMin = new UserMin() { UserId = user.UserId, UserType = user.UserType };
+                        var user = provider.ValidateTokenAndGetUser(tokenValue);
+                        userMin = user ?? throw new SecurityException("Token validation failed");
                     }
                     //validate resource grant
                     resourceService.validateUrlPermission(actionName, controllerName, controllerPackage, userMin.UserId);

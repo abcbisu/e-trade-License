@@ -1,32 +1,62 @@
 ﻿
-using etrade.services.Models;
-using System;
+using etrade.dal;
+using etrade.models;
 using System.Linq;
+using System.Security;
+using System.Data;
+using etrade.Dal;
 
 namespace etrade.services
 {
     public class UserService : ServiceBase
     {
-        public UserToken GetNewAuthToken(string mobile, string password)
+        long UserId;
+        public UserService(long UserId)
         {
-            if (string.IsNullOrEmpty(mobile) || mobile.Trim().Length < 10)
-            {
-                throw new ArgumentException("Invalid mobile no");
-            }
-            if (string.IsNullOrEmpty(password))
-            {
-                throw new ArgumentException("Invalid password");
-            }
-            var user = _db.UserCredentials.FirstOrDefault(t => t.MobileNo.Contains(mobile));
+            this.UserId = UserId;
+        }
+        public UserToken GetNewAuthToken(string identity, IdentityType idType, string otp)
+        {
+            var _otps = new OtpServer(UserId);
+            var _ud = new Userdal(UserId);
+            if (idType == IdentityType.email)
+                etrade.Validate.Email(identity);
+            else if (idType == IdentityType.mobile)
+                etrade.Validate.Mobile(identity);
+            
+            //implementation required
+            var user = _otps.GetUserValidatingOtp(identity, idType, otp);
+            _ud.GetUserLockedOrNot(user.UserId);
+            var tokenSrv = new TokenServices(user.UserId);
+           return tokenSrv.GenerateToken();
+        }
+        
+        public T validateUserCredential<T>(IAuthentication<T> authentication)
+        {
+            var user= authentication.Authenticate();
             if (user == null)
             {
-                throw new SecurityException("Mobile number not found");
+                throw new AuthenticationRequiredException("Invalid Credential Provided");
             }
-            if (string.Equals(password, user.Password))
+            return user;
+        }
+        public bool RecoverPassword(string Idntity, IdentityType IdType,string Password)
+        {
+            using (var _rcPass = new Userdal(UserId))
             {
-                throw new Exception("Invalid Password");
+                var successFlag = _rcPass.RecoverUserPassword(Idntity, IdType, Password);
+                return successFlag;
             }
-            return new TokenServices().GenerateToken(user.UserId);
+        }
+        public UserMin GetUserByIdentity(string Identifire, IdentityType? IdType)
+        {
+            using (var _rcPass = new Userdal(UserId))
+            {
+                var obj = _rcPass.GetUserByIdentity(Identifire, IdType);
+                if (obj == null)
+                    throw new System.NullReferenceException("User not found");
+                return obj;
+            }
         }
     }
 }

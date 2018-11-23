@@ -43,6 +43,22 @@ namespace etrade
             HttpStatus = HttpStatusCode.InternalServerError;
         }
     }
+    public class InvalidOTPorIdentity : AppException
+    {
+        public InvalidOTPorIdentity(): base("Invalid OTP or Identity", "ER510")
+        {
+            ExceptionData = new ExceptionModelBase()
+            {
+                Code = "ER510",
+                Message = "Invalid OTP or Identity"
+            };
+            this.HttpStatus = System.Net.HttpStatusCode.Forbidden;
+        }
+        public InvalidOTPorIdentity(string msg) : base(msg, "ER510")
+        {
+            HttpStatus = System.Net.HttpStatusCode.Forbidden;
+        }
+    }
     //"ER403"
     public class AccessDeniedException : AppException
     {
