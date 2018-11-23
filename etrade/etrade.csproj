@@ -51,9 +51,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AESAlgorithm.cs" />
-    <Compile Include="ExceptionExtensionMethods.cs" />
+    <Compile Include="Extensions\CommonExtensionMethos.cs" />
+    <Compile Include="Extensions\DataTableExtensions.cs" />
+    <Compile Include="Extensions\ExceptionExtensionMethods.cs" />
     <Compile Include="Exceptions.cs" />
-    <Compile Include="ExtensionMethos.cs" />
+    <Compile Include="IAuthentication.cs" />
     <Compile Include="IdentityType.cs" />
     <Compile Include="IEncryptDecrypt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

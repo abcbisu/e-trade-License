@@ -1,4 +1,5 @@
-﻿using System;
+﻿using etrade.dal;
+using System;
 
 namespace etrade.services
 {
@@ -8,26 +9,18 @@ namespace etrade.services
     }
     public class ResourceService: IResourceService
     {
-        public void validateUrlPermission(string actionName, string controllerName, string controllerPackage, long userId)
+        public long _actorId { get; private set; }
+        public ResourceService( long actorId)
         {
-                //check tergate action is available on current roles of tergate user id
-                //var roleIds = _db.UsersInRoles
-                //    .Where(t => t.UserId == userId && t.IsDeleted == false)
-                //    .Select(t => t.RoleId).ToList();
-                //var actionIds = _db.ActionsInRoles
-                //    .Include(e => e.Action.Controller.ControllerPackage)
-                //    .Where(t => t.IsDeleted == false
-                //        && t.Action.ActionName == actionName
-                //        && t.Action.IsDeleted == false && t.Action.IsActive == true
-                //        && t.Action.Controller.ControllerName == controllerName
-                //        && t.Action.Controller.IsDeleted == false && t.Action.Controller.IsActive == true
-                //        && t.Action.Controller.ControllerPackage.PackageName == packageName
-                //        && t.Action.Controller.ControllerPackage.IsDeleted == false
-                //        && roleIds.Contains(t.RoleId))
-                //    .Select(t => t.ActionId).ToList();
-                //if (actionIds.Count() < 1)
-                //    throw new AccessDeniedException("Access denied");
-            throw new NotImplementedException();
+            _actorId = actorId;
+        }
+        public void validateUrlPermission(string actionName, string controllerName, string controllerPackage,long userId)
+        {
+            using(var resource=new Resourcedal(userId))
+            {
+                if (!resource.hasUrlPermissionForUser(actionName, controllerName, controllerPackage)) throw new AccessDeniedException(string.Format("{0}.{1}.{2} Access Denied", controllerPackage, controllerName, actionName));
+            }
+            //throw new NotImplementedException();
         }
     }
 }

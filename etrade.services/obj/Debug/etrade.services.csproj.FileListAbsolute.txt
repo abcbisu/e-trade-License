@@ -13,3 +13,23 @@ F:\SourceControl\Atlassian Git\Angular\project.tred-lisence2\etrade-server\etrad
 F:\SourceControl\Atlassian Git\Angular\project.tred-lisence2\etrade-server\etrade.services\obj\Debug\etrade.services.csproj.CopyComplete
 F:\SourceControl\Atlassian Git\Angular\project.tred-lisence2\etrade-server\etrade.services\obj\Debug\etrade.services.dll
 F:\SourceControl\Atlassian Git\Angular\project.tred-lisence2\etrade-server\etrade.services\obj\Debug\etrade.services.pdb
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.services\bin\Debug\etrade.services.dll
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.services\bin\Debug\etrade.services.pdb
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.services\bin\Debug\etrade.Dal.dll
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.services\bin\Debug\etrade.dll
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.services\bin\Debug\etrade.entities.dll
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.services\bin\Debug\etrade.models.dll
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.services\bin\Debug\System.Web.Http.dll
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.services\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.services\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.services\bin\Debug\etrade.Dal.pdb
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.services\bin\Debug\etrade.entities.pdb
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.services\bin\Debug\etrade.models.pdb
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.services\bin\Debug\etrade.pdb
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.services\bin\Debug\System.Web.Http.xml
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.services\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.services\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.services\obj\Debug\etrade.services.csprojResolveAssemblyReference.cache
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.services\obj\Debug\etrade.services.csproj.CoreCompileInputs.cache
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.services\obj\Debug\etrade.services.dll
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.services\obj\Debug\etrade.services.pdb

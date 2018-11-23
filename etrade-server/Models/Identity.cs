@@ -27,7 +27,7 @@ namespace etrade_server.Models
             }
             else if(IdType==IdentityType.mobile)
             {
-                etrade.Validate.Email(this.Idntity);
+                etrade.Validate.Mobile(this.Idntity);
             }
             else
             {

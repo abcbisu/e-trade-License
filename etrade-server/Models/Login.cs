@@ -11,5 +11,6 @@ namespace etrade_server.Models
         public string IMCode { get; set; }
         [Required]
         public string Otp { get; set; }
+        public int LoginType { get; set; }
     }
 }

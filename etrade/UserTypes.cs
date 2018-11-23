@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace etrade
-{
-    public enum UserType
+
+    public enum LoginType
     {
-        System = 1,
-        Anonymous = 2,
-        Citizen = 3,
-    }
+        Anonymous=1,
+        General = 2
 }
+

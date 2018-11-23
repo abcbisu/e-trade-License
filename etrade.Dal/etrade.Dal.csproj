@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,11 +41,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="DalBase.cs" />
+    <Compile Include="DbHandler.cs" />
+    <Compile Include="OtpDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resourcedal.cs" />
+    <Compile Include="Tokendal.cs" />
+    <Compile Include="Userdal.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Models\" />
+    <ProjectReference Include="..\etrade.entities\etrade.entities.csproj">
+      <Project>{7ce40b7e-9870-4cb9-99e8-60fae5ee075f}</Project>
+      <Name>etrade.entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\etrade.models\etrade.models.csproj">
+      <Project>{4EE5A1D7-B1F9-40E9-B39A-F03640B5D933}</Project>
+      <Name>etrade.models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\etrade\etrade.csproj">
+      <Project>{fbad9e84-e89f-4192-a705-bb6a989becf2}</Project>
+      <Name>etrade</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
