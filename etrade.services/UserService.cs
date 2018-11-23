@@ -26,7 +26,7 @@ namespace etrade.services
             
             //implementation required
             var user = _otps.GetUserValidatingOtp(identity, idType, otp);
-            _ud.GetUserLockedOrNot(user.UserId);
+            _ud.ValidateUserAccLockedStatus(user.UserId);
             var tokenSrv = new TokenServices(user.UserId);
            return tokenSrv.GenerateToken();
         }
