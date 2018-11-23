@@ -1,0 +1,14 @@
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.models\bin\Debug\etrade.models.dll
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.models\bin\Debug\etrade.models.pdb
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.models\bin\Debug\etrade.dll
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.models\bin\Debug\System.Web.Http.dll
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.models\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.models\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.models\bin\Debug\etrade.pdb
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.models\bin\Debug\System.Web.Http.xml
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.models\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.models\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.models\obj\Debug\etrade.models.csprojResolveAssemblyReference.cache
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.models\obj\Debug\etrade.models.csproj.CoreCompileInputs.cache
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.models\obj\Debug\etrade.models.dll
+C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.models\obj\Debug\etrade.models.pdb
