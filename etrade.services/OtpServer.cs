@@ -8,8 +8,8 @@ namespace etrade.services
 {
     public class OtpServer
     {
-        long userId;
-        public OtpServer(long userId)
+        long? userId;
+        public OtpServer(long? userId)
         {
             this.userId = userId;
         }

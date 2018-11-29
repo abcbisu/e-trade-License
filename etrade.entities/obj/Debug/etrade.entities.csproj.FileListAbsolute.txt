@@ -3,3 +3,9 @@ C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.entities\bin\Debug\etrade.e
 C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.entities\obj\Debug\etrade.entities.csproj.CoreCompileInputs.cache
 C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.entities\obj\Debug\etrade.entities.dll
 C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.entities\obj\Debug\etrade.entities.pdb
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.entities\bin\Debug\etrade.entities.dll
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.entities\bin\Debug\etrade.entities.pdb
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.entities\obj\Debug\etrade.entities.csprojAssemblyReference.cache
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.entities\obj\Debug\etrade.entities.csproj.CoreCompileInputs.cache
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.entities\obj\Debug\etrade.entities.dll
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.entities\obj\Debug\etrade.entities.pdb

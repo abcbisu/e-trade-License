@@ -1,15 +1,43 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
+using etrade.entities;
 using etrade.models;
 
 namespace etrade.dal
 {
     public class Userdal : DalBase
     {
-        public Userdal(long userId):base(userId)
+        public Userdal(long? userId):base(userId)
         {
+        }
+        public RspResult<UserMin> GetLoginBehaviourValidatingUser(string identity,string password,IdentityType identityType)
+        {
+            var cmd = NewCommand("etrade.get_loginBehaviourValidatingUser");
+            cmd.Parameters.AddWithValue("@idntity", identity.ReplaceDbNull());
+            cmd.Parameters.AddWithValue("@password", password.ReplaceDbNull());
+            cmd.Parameters.AddWithValue("@idType", identityType);
+            var lst = GetResult(cmd).AsEnumerable().Select(t =>
+            {
+                var rst = new RspResult<UserMin>
+                {
+                    CommanDescription=t.Field<string>("cmdDescr"),
+                    Exec=t.Field<bool>("exec"),
+                    HasPendingCommand=t.Field<bool>("HasPendingCommand"),
+                    PendingCommnad=t.Field<string>("nextLoginCommand"),
+                    Result=new UserMin() {
+                        LoginType=t.Field<LoginType>("LoginType"),
+                        UserId=t.Field<long>("UserId")
+                    }
+                };
+                return rst;
+            }).ToList();
+            if (lst.Count > 0)
+                return lst[0];
+            return null;
         }
         public UserMin GetUserValidatingCredential(string Idntity, string Password,IdentityType IdType)
         {
@@ -49,5 +77,6 @@ namespace etrade.dal
             cmd.Parameters.AddWithValue("@userId", userId);
             ExecuteNonQuery(cmd);
         }
+        
     }
 }

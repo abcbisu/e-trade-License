@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-    public enum LoginType
+namespace etrade.models
+{
+   public class TranslatedData<T>
     {
-        Anonymous=1,
-        General = 2
+        public Dictionary<int, T> LocalizedData { get; set; }
+    }
 }
-

@@ -12,3 +12,18 @@ C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.models\obj\Debug\etrade.mod
 C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.models\obj\Debug\etrade.models.csproj.CoreCompileInputs.cache
 C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.models\obj\Debug\etrade.models.dll
 C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.models\obj\Debug\etrade.models.pdb
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.models\bin\Debug\etrade.models.dll
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.models\bin\Debug\etrade.models.pdb
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.models\bin\Debug\etrade.dll
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.models\bin\Debug\System.Web.Http.dll
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.models\bin\Debug\Newtonsoft.Json.dll
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.models\bin\Debug\System.Net.Http.Formatting.dll
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.models\bin\Debug\etrade.pdb
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.models\bin\Debug\System.Web.Http.xml
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.models\bin\Debug\Newtonsoft.Json.xml
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.models\bin\Debug\System.Net.Http.Formatting.xml
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.models\obj\Debug\etrade.models.csprojAssemblyReference.cache
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.models\obj\Debug\etrade.models.csproj.CoreCompileInputs.cache
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.models\obj\Debug\etrade.models.csproj.CopyComplete
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.models\obj\Debug\etrade.models.dll
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.models\obj\Debug\etrade.models.pdb

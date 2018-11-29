@@ -3,12 +3,12 @@ using etrade;
 using etrade.dal;
 using etrade.models;
 
-namespace etrade_server.App_Codes.Authenticator
+namespace etrade
 {
-    public class GeneralUserAuthenticator<T>  : IAuthentication<T> where T : UserMin
+    public class AuthenticatorBase<T>  : IAuthentication<T> where T : UserMin
     {
         string Idntity; string Password; IdentityType IdType;
-        public GeneralUserAuthenticator(string Idntity, string Password, IdentityType IdType)
+        public AuthenticatorBase(string Idntity, string Password, IdentityType IdType)
         {
             this.IdType = IdType;
             this.Password = Password;
