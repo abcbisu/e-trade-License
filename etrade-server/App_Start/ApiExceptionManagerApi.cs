@@ -29,7 +29,9 @@ namespace etrade_server.App_Start
 
             public override bool ShouldHandle(ExceptionHandlerContext context)
             {
-                return base.ShouldHandle(context);
+               
+            //var x= base.ShouldHandle(context);
+            return true;
             }
 
             public Task LogAsync(ExceptionLoggerContext context, CancellationToken cancellationToken)
