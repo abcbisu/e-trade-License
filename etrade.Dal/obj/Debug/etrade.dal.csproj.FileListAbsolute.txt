@@ -16,3 +16,22 @@ C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.Dal\obj\Debug\etrade.dal.cs
 C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.Dal\obj\Debug\etrade.dal.csproj.CoreCompileInputs.cache
 C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.Dal\obj\Debug\etrade.Dal.dll
 C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.Dal\obj\Debug\etrade.Dal.pdb
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.Dal\bin\Debug\etrade.Dal.dll
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.Dal\bin\Debug\etrade.Dal.pdb
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.Dal\bin\Debug\etrade.dll
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.Dal\bin\Debug\etrade.entities.dll
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.Dal\bin\Debug\etrade.models.dll
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.Dal\bin\Debug\System.Web.Http.dll
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.Dal\bin\Debug\Newtonsoft.Json.dll
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.Dal\bin\Debug\System.Net.Http.Formatting.dll
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.Dal\bin\Debug\etrade.entities.pdb
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.Dal\bin\Debug\etrade.models.pdb
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.Dal\bin\Debug\etrade.pdb
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.Dal\bin\Debug\System.Web.Http.xml
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.Dal\bin\Debug\Newtonsoft.Json.xml
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.Dal\bin\Debug\System.Net.Http.Formatting.xml
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.Dal\obj\Debug\etrade.dal.csprojAssemblyReference.cache
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.Dal\obj\Debug\etrade.dal.csproj.CoreCompileInputs.cache
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.Dal\obj\Debug\etrade.dal.csproj.CopyComplete
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.Dal\obj\Debug\etrade.Dal.dll
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.Dal\obj\Debug\etrade.Dal.pdb

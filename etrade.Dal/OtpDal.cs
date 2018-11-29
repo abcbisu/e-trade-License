@@ -10,13 +10,13 @@ namespace etrade.Dal
 {
     public class OtpDal: DalBase
     {
-        public OtpDal(long userId) : base(userId){}
+        public OtpDal(long? userId) : base(userId){}
         public etrade.entities.OtpResponse RequerstOTP(string identity,IdentityType IdType, string Flag) //IdentyType may be Email or Mobile, Flag=lgn for Login, Flag=RecvPass for Recover Password
         {
-            int OtpExpireAfterMinutes = 0;
-            int otpNextSendAfterMinutes = 0;
-            OtpExpireAfterMinutes = Convert.ToInt32(ConfigurationManager.AppSettings["OtpExpireAfterMinutes"]);
-            otpNextSendAfterMinutes = Convert.ToInt32(ConfigurationManager.AppSettings["otpNextSendAfterMinutes"]);
+            int OtpExpireAfterSeconds = 0;
+            int otpNextSendAfterSeconds = 0;
+            OtpExpireAfterSeconds = Convert.ToInt32(ConfigurationManager.AppSettings["OtpExpireAfterSeconds"]);
+            otpNextSendAfterSeconds = Convert.ToInt32(ConfigurationManager.AppSettings["otpNextSendAfterSeconds"]);
             var cmd = NewCommand("etrade.Insert_Otp");
 
             //if (Flag== "lgn" || Flag== "RecvPass")
@@ -28,8 +28,8 @@ namespace etrade.Dal
             //    cmd.Parameters.AddWithValue("@userId", _actorId);
             //}
             cmd.Parameters.AddWithValue("@identityType", IdType);
-            cmd.Parameters.AddWithValue("@expireAfterMinites", OtpExpireAfterMinutes);
-            cmd.Parameters.AddWithValue("@nextSendAfterMinutes", otpNextSendAfterMinutes);
+            cmd.Parameters.AddWithValue("@expireAfterSeconds", OtpExpireAfterSeconds);
+            cmd.Parameters.AddWithValue("@nextSendAfterSeconds", otpNextSendAfterSeconds);
             cmd.Parameters.AddWithValue("@otpVal", new Random().Next(10000000, 99999999));//8 digit random number
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
             var res = GetResult(cmd).Convert<etrade.entities.OtpResponse>();

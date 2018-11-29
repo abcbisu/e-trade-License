@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using etrade.models;
+using System.ComponentModel.DataAnnotations;
 
 namespace etrade_server.Models
 {

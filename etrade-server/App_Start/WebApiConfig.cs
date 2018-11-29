@@ -6,6 +6,9 @@ using System.Web.Http.Controllers;
 using System.Web.Http.Dispatcher;
 using System.Web.Http.ExceptionHandling;
 using System.Web.Http.Routing;
+using System.Web.Http.Cors;
+using System.Configuration;
+using Newtonsoft.Json;
 
 namespace etrade_server.App_Start
 {
@@ -13,6 +16,8 @@ namespace etrade_server.App_Start
     {
         public static void Register(HttpConfiguration config)
         {
+            
+            EnableCrossSiteRequests(config);
             //config.MapHttpAttributeRoutes(new CentralizedPrefixProvider("api"));
             config.MapHttpAttributeRoutes();
             config.Services.Replace(typeof(IExceptionHandler), new ApiExceptionManagerApi());
@@ -26,6 +31,19 @@ namespace etrade_server.App_Start
             //config.Services.Replace(typeof(IHttpControllerSelector), new HttpNotFoundAwareDefaultHttpControllerSelector(config));
             //config.Services.Replace(typeof(IHttpActionSelector), new HttpNotFoundAwareControllerActionSelector());
             #endregion
+        }
+        private static void EnableCrossSiteRequests(HttpConfiguration config)
+        {
+            var corEnabledConfig = ConfigurationManager.AppSettings["cors-config"];
+            if (!string.IsNullOrEmpty(corEnabledConfig))
+            {
+                var configs = JsonConvert.DeserializeObject<Dictionary<string, string>>(corEnabledConfig);
+                var cors = new EnableCorsAttribute(
+                    origins: (configs.ContainsKey("origins") ?configs["origins"] :"")??"",
+                    headers: (configs.ContainsKey("headers") ? configs["headers"] : "") ?? "",
+                    methods: (configs.ContainsKey("methods") ? configs["methods"] : "") ?? "");
+                config.EnableCors(cors);
+            }
         }
     }
     public class CentralizedPrefixProvider : DefaultDirectRouteProvider

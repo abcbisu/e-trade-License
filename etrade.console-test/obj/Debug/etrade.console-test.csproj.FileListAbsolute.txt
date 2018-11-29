@@ -21,3 +21,27 @@ C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.console-test\obj\Debug\etra
 C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.console-test\obj\Debug\etrade.console-test.csproj.CoreCompileInputs.cache
 C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.console-test\obj\Debug\etrade.console-test.exe
 C:\Users\Shrawan\Eklas\Projects\etrade-server\etrade.console-test\obj\Debug\etrade.console-test.pdb
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.console-test\bin\Debug\etrade.console-test.exe.config
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.console-test\bin\Debug\etrade.console-test.exe
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.console-test\bin\Debug\etrade.console-test.pdb
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.console-test\bin\Debug\etrade.dll
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.console-test\bin\Debug\etrade.models.dll
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.console-test\bin\Debug\etrade.services.dll
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.console-test\bin\Debug\etrade.Dal.dll
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.console-test\bin\Debug\etrade.entities.dll
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.console-test\bin\Debug\System.Web.Http.dll
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.console-test\bin\Debug\Newtonsoft.Json.dll
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.console-test\bin\Debug\System.Net.Http.Formatting.dll
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.console-test\bin\Debug\etrade.models.pdb
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.console-test\bin\Debug\etrade.services.pdb
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.console-test\bin\Debug\etrade.pdb
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.console-test\bin\Debug\etrade.Dal.pdb
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.console-test\bin\Debug\etrade.entities.pdb
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.console-test\bin\Debug\System.Web.Http.xml
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.console-test\bin\Debug\Newtonsoft.Json.xml
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.console-test\bin\Debug\System.Net.Http.Formatting.xml
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.console-test\obj\Debug\etrade.console-test.csprojAssemblyReference.cache
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.console-test\obj\Debug\etrade.console-test.csproj.CoreCompileInputs.cache
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.console-test\obj\Debug\etrade.console-test.csproj.CopyComplete
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.console-test\obj\Debug\etrade.console-test.exe
+F:\SourceControl\Atlassian Git\e-trade-License\e-trade.server\etrade.console-test\obj\Debug\etrade.console-test.pdb

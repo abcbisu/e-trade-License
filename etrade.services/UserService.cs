@@ -1,17 +1,14 @@
 ﻿
 using etrade.dal;
 using etrade.models;
-using System.Linq;
-using System.Security;
-using System.Data;
-using etrade.Dal;
+using System;
 
 namespace etrade.services
 {
     public class UserService : ServiceBase
     {
-        long UserId;
-        public UserService(long UserId)
+        long? UserId;
+        public UserService(long? UserId)
         {
             this.UserId = UserId;
         }
@@ -23,24 +20,72 @@ namespace etrade.services
                 etrade.Validate.Email(identity);
             else if (idType == IdentityType.mobile)
                 etrade.Validate.Mobile(identity);
-            
+
             //implementation required
             var user = _otps.GetUserValidatingOtp(identity, idType, otp);
             _ud.ValidateUserAccLockedStatus(user.UserId);
             var tokenSrv = new TokenServices(user.UserId);
-           return tokenSrv.GenerateToken();
+            return tokenSrv.GenerateToken();
         }
-        
-        public T validateUserCredential<T>(IAuthentication<T> authentication)
+
+        public T ValidateUserCredential<T>(IAuthentication<T> authentication)
         {
-            var user= authentication.Authenticate();
+            var user = authentication.Authenticate();
             if (user == null)
             {
                 throw new AuthenticationRequiredException("Invalid Credential Provided");
             }
+
             return user;
         }
-        public bool RecoverPassword(string Idntity, IdentityType IdType,string Password)
+        public object TryToLogin(Credenetial credenetial)
+        {
+            using (var usr = new Userdal(UserId))
+            {
+                var resp = usr.GetLoginBehaviourValidatingUser(credenetial.Idntity, credenetial.Password, credenetial.IdType);
+                if (resp == null)
+                {
+                    throw new AuthenticationRequiredException("Invalid Credential Provided");
+                }
+                if (resp.HasPendingCommand)
+                {
+                    if (string.Equals(resp.PendingCommnad, "vrf-otp", StringComparison.OrdinalIgnoreCase))
+                    {
+                        var _otpDrv = new OtpServer(Convert.ToInt64(UserId));
+                        var _otp = _otpDrv.RequerstOTP(credenetial.Idntity, credenetial.IdType, "lgn");
+                        return new RspResult<OtpResponse>()
+                        {
+                            CommanDescription = resp.CommanDescription,
+                            Exec = resp.Exec,
+                            HasPendingCommand = resp.HasPendingCommand,
+                            Params = resp.Params,
+                            PendingCommnad = resp.PendingCommnad,
+                            Result = _otp
+                        };
+                    }
+                    else
+                    {
+                        throw new InvalidOperationException(string.Format("Invalid command or configuration not supproted"));
+                    }
+                }
+                else
+                {
+                    //this never will executed till database side not written
+                    //login complete
+                    var token = new TokenServices(resp.Result.UserId).GenerateToken();
+                    return new RspResult<UserToken>()
+                    {
+                        CommanDescription = resp.CommanDescription,
+                        Exec = resp.Exec,
+                        HasPendingCommand = resp.HasPendingCommand,
+                        Params = resp.Params,
+                        PendingCommnad = resp.PendingCommnad,
+                        Result = token
+                    };
+                }
+            }
+        }
+        public bool RecoverPassword(string Idntity, IdentityType IdType, string Password)
         {
             using (var _rcPass = new Userdal(UserId))
             {

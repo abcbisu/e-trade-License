@@ -5,39 +5,29 @@ using System.Web.Http;
 using etrade_server.App_Start;
 using etrade.models;
 using etrade_server.Models;
-using etrade_server.App_Codes.Authenticator;
 using etrade;
 
 namespace etrade_server.Controllers.ApiService
 {
     [SecuredFilter]
-    [RoutePrefix("app/v1/users")]
-    public class AuthController : ApiController
+    [RoutePrefix("api/v1/users")]
+    public class AuthController : BaseController
     {
         public AuthController()
         {
         }
-        [Route("check")]
-        [HttpPost]
-        public HttpResponseMessage check()
-        {
-            return Request.CreateResponse(new { text="Hello"});
-        }
-        [HttpPost]
-        [Route("ValidateForLogin")]
-        public HttpResponseMessage ValidateForLogin([FromBody]Credenetial credenetial)
-        {
-            //return unique validation unique code
-            var _curUserId = SessionContext.CurrentUser.UserId;
-            var _us = new UserService(_curUserId);
-            var _user = _us.validateUserCredential(new GeneralUserAuthenticator<UserMin>(credenetial.Idntity, credenetial.Password, credenetial.IdType));
-            var _otp = new OtpServer(Convert.ToInt64(_user.UserId));
-            return Request.CreateResponse(_otp.RequerstOTP(credenetial.Idntity,credenetial.IdType, "lgn"));
-            
-        }
         [HttpPost]
         [Route("Login")]
-        public HttpResponseMessage Login([FromBody]Login login)
+        public HttpResponseMessage ValidateForLogin([FromBody]Credenetial credenetial)
+        {
+            var _curUserId = SessionContext.CurrentUser.UserId;
+            var _us = new UserService(_curUserId);
+            var result = _us.TryToLogin(credenetial);
+            return Request.CreateResponse(result);
+        }
+        [HttpPost]
+        [Route("LoginWithOtp")]
+        public HttpResponseMessage LoginWithOtp([FromBody]Login login)
         {
             var _curUserId = SessionContext.CurrentUser.UserId;
             login = login != null ? login : throw new EntityValidationException(null,"Credential Required");
